@@ -1,0 +1,45 @@
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<div class="container">
+    <h1 style="text-align: center;">Lost&Found</h1>
+    <h2>Register</h2>
+    <form action="/users/register" method="post">
+        <div class="mb-3">
+            <label for="fullname" class="form-label">Fullname</label>
+            <input type="text" class="form-control" id="fullname" name="fullname" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Confirm password</label>
+            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+        </div>
+        <div class="mb-3">
+            <label for="contactNumber" class="form-label">Contact number</label>
+            <input type="text" class="form-control" id="contactNumber" name="contactNumber" required>
+        </div>
+        <div class="mb-3">
+            <label for="university">University</label>
+            <select class="form-select" aria-label="Default select example" id="university" name="university" required>
+                <option value="VIT-Vellore">VIT-Vellore</option>
+                <option value="VIT-Chennai">VIT-Chennai</option>
+                <option value="VIT-AP">VIT-AP</option>
+                <option value="VIT-Bhopal">VIT-Bhopal</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+    <p>Already on Lost&Found? <a href="/users/login" style="text-decoration: none;">Login</a></p><br>
+    <div class="col-md-12 text-center">
+        <p>Lost&Found Made by Saikiran</p>
+    </div>
+</div>
